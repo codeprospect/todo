@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+.container {
+  /* width: 400px; */
+  /* text-align: center; */
+}
+
+.header {
+  margin: 0px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  margin-right: 5px;
+}
+
+input {
+  padding: 10px;
+}
+
+button {
+  border: 0;
+  background-color: inherit;
+  font-size: 1.1rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.tasks {
+  display: flex;
+  justify-content: center;
+}
+
+.task {}
+
+.task-name {
+  width: 60%;
+}
+
+.icons {
+  width: 30%;
+}
+
+#delete:hover, #cross:hover {
+  cursor: pointer;
+}
+
+.cross {
+  text-decoration: line-through;
+}
+
+
+@@media only screen and (max-width: 600px) {
+  body {
+    margin: 5px;
+  }
+}

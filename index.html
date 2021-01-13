@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js" charset="utf-8"></script>
+    <title>Todo list</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>todo list</h1>
+      </div>
+      <form id="form" class="form" action="index.html" method="GET">
+        <div class="form-control">
+          <input type="text" placeholder="input your task here" name="taskinput" id="taskinput">
+        </div>
+        <button type="submit" name="button">
+          <i class="material-icons">add_box</i>
+        </button>
+      </form>
+      <div class="tasks">
+        <div class="task-name cross" value="1">
+          this is task one
+        </div>
+        <div class="icons">
+          <i class="material-icons" id="delete">delete</i>
+          <i class="material-icons" id="cross">check_box</i>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
