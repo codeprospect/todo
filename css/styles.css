@@ -5,9 +5,23 @@ body {
   margin: 0px;
 }
 
+.message {
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.8s;
+  visibility: hidden;
+}
+
+.message.error {
+  background-color: pink;
+  border: 2px solid red;
+  transition-timing-function: ease-in;
+  visibility: visible;
+}
+
 .container {
-  /* width: 400px; */
-  /* text-align: center; */
+  width: 400px;
 }
 
 .header {
@@ -27,6 +41,7 @@ form {
 
 input {
   padding: 10px;
+  border-radius: 5px;
 }
 
 button {
@@ -42,19 +57,24 @@ button:hover {
 .tasks {
   display: flex;
   justify-content: center;
-}
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
 
-.task {}
+}
 
 .task-name {
-  width: 60%;
+  width: 100%;
+  text-align: center;
 }
 
-.icons {
-  width: 30%;
-}
+
 
 #delete:hover, #cross:hover {
+  cursor: pointer;
+}
+
+.material-icons:hover {
   cursor: pointer;
 }
 
@@ -62,6 +82,9 @@ button:hover {
   text-decoration: line-through;
 }
 
+.green {
+  color: green;
+}
 
 @@media only screen and (max-width: 600px) {
   body {

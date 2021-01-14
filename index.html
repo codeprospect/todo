@@ -10,25 +10,22 @@
   </head>
   <body>
     <div class="container">
+      <div id="message" class="message">
+        
+      </div>
       <div class="header">
         <h1>todo list</h1>
       </div>
       <form id="form" class="form" action="index.html" method="GET">
         <div class="form-control">
-          <input type="text" placeholder="input your task here" name="taskinput" id="taskinput">
+          <input class="error" type="text" placeholder="input your task here" name="taskinput" id="taskinput">
         </div>
         <button type="submit" name="button">
           <i class="material-icons">add_box</i>
         </button>
       </form>
-      <div class="tasks">
-        <div class="task-name cross" value="1">
-          this is task one
-        </div>
-        <div class="icons">
-          <i class="material-icons" id="delete">delete</i>
-          <i class="material-icons" id="cross">check_box</i>
-        </div>
+      <div id="tasks" class="tasks">
+
       </div>
       </div>
     </div>
