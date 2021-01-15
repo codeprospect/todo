@@ -2,6 +2,8 @@
 import newButtons from './buttons.js';
 // importing the function for creating the task card
 import newCard from './card.js';
+// importing the functions that validate the user's input
+import { verifyInput, setError, removeError } from './input.js';
 
 
 const input = document.querySelector('input');
