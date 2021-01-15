@@ -22,9 +22,9 @@ Pull requests are welcome. You can help in making the code more efficient and sh
 ## Roadmap
 - [x] Validate data inputes
 - [x] Design for smaller screens
+- [x] Seperate the different Javascript functions into separate Javascript files
 - [ ] Add styling to the website
 - [ ] Add the ability to sort the todo list
-- [ ] Seperate the different Javascript functions into separate Javascript files
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
