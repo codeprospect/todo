@@ -37,29 +37,8 @@ const createNewTask = () => {
 
 };
 
-// function for verifying input
-const verifyInput = (taskInput) => {
-  if (taskInput == '') {
-    return true;
-  }
-};
 
-//function to display an error
-const setError = (message) => {
-  const errorDiv = document.getElementById('message');
-  errorDiv.textContent = message;
-  errorDiv.classList.add("error");
-};
-
-//function to remove error from page
-const removeError = () => {
-  const errorDiv = document.getElementById('message');
-  errorDiv.classList.remove("error");
-}
-
-
-
-//cross task
+// cross task and deleting tasks
 window.addEventListener('click', (e) => {
 
   //ensuring that the button clicked is the done button
