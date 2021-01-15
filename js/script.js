@@ -28,7 +28,7 @@ const createNewTask = () => {
   } else {
     removeError();
 
-    newCard(newTask, counter);
+    newCard(newTask, counter, taskContainer);
 
     newButtons(counter, taskContainer);
   }
