@@ -1,5 +1,5 @@
 //function for creating the done and delete buttons
-export default const newButtons = (idValue) => {
+const newButtons = (idValue, parentDiv) => {
   //creating the div containing the done and delete buttons
   const iconsDiv = document.createElement('div')
   iconsDiv.classList.add('icons');
@@ -24,6 +24,8 @@ export default const newButtons = (idValue) => {
   iconsDiv.appendChild(deleteButton);
 
   //appending the new task to the taskContainer
-  taskContainer.appendChild(iconsDiv);
+  parentDiv.appendChild(iconsDiv);
 
 };
+
+export default newButtons

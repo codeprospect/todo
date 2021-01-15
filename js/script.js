@@ -30,7 +30,7 @@ const createNewTask = () => {
 
     newCard(newTask, counter);
 
-    newButtons(counter);
+    newButtons(counter, taskContainer);
   }
 
 };
