@@ -1,5 +1,7 @@
 // importing the function for creating buttons
 import newButtons from './buttons.js';
+// importing the function for creating the task card
+import newCard from './card.js';
 
 
 const input = document.querySelector('input');
@@ -54,25 +56,6 @@ const removeError = () => {
   const errorDiv = document.getElementById('message');
   errorDiv.classList.remove("error");
 }
-
-//function for creating the new task card
-const newCard = (taskInput, idValue, parentDiv) => {
-
-  //creating a new task
-  const newTaskCard = document.createElement('div');
-
-  //assigning the new task a class
-  newTaskCard.className = 'task-name';
-
-  //creating the id attribute
-  newTaskCard.id = `${idValue}`;
-
-  //assigning the task inputted to the new div
-  newTaskCard.textContent = taskInput;
-
-  parentDiv.appendChild(newTaskCard);
-};
-
 
 
 
