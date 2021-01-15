@@ -56,7 +56,7 @@ const removeError = () => {
 }
 
 //function for creating the new task card
-const newCard = (taskInput, idValue) => {
+const newCard = (taskInput, idValue, parentDiv) => {
 
   //creating a new task
   const newTaskCard = document.createElement('div');
@@ -70,7 +70,7 @@ const newCard = (taskInput, idValue) => {
   //assigning the task inputted to the new div
   newTaskCard.textContent = taskInput;
 
-  taskContainer.appendChild(newTaskCard);
+  parentDiv.appendChild(newTaskCard);
 };
 
 
