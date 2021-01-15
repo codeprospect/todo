@@ -1,5 +1,5 @@
 //function for creating the done and delete buttons
-const newButtons = (idValue) => {
+export default const newButtons = (idValue) => {
   //creating the div containing the done and delete buttons
   const iconsDiv = document.createElement('div')
   iconsDiv.classList.add('icons');

@@ -1,3 +1,7 @@
+// importing the function for creating buttons
+import newButtons from './buttons.js';
+
+
 const input = document.querySelector('input');
 const form = document.getElementById('form');
 const taskContainer = document.getElementById('tasks');
