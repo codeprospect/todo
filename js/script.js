@@ -11,6 +11,8 @@ const form = document.getElementById('form');
 const taskContainer = document.getElementById('tasks');
 let counter = 0;
 
+//creating a new list item
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
@@ -32,9 +34,14 @@ const createNewTask = () => {
   } else {
     removeError();
 
-    newCard(newTask, counter, taskContainer);
+    const listItem = document.createElement('li');
 
-    newButtons(counter, taskContainer);
+    newCard(newTask, counter, listItem);
+
+    newButtons(counter, listItem);
+
+    taskContainer.appendChild(listItem);
+
   }
 
 };
@@ -48,7 +55,8 @@ window.addEventListener('click', (e) => {
     //getting the task with the same id as the button
     const taskCrossed = document.getElementById(e.srcElement.id);
     taskCrossed.classList.toggle('cross');
-    taskCrossed.classList.toggle('green');
+    const parent = taskCrossed.parentElement;
+    parent.classList.toggle('done');
   }
 
   //checking if the button clicked is the delete button
@@ -56,11 +64,7 @@ window.addEventListener('click', (e) => {
     //getting the task with the same id as the button
     const taskDeleted = document.getElementById(e.srcElement.id);
     // getting the parent node of the button clicked
-    const currentButtons = e.path[1];
-    //removing the task from the DOM
-    taskDeleted.remove();
-    //removing the buttons from the DOM
-    currentButtons.remove();
+    taskDeleted.parentElement.remove();
 
   }
 });
